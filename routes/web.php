@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::post('/ae', [HomeController::class, 'ae'])->name('ae');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 Route::get('/products/search', [ProductController::class, 'search'])->name('products.search');
